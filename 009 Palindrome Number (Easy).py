@@ -25,22 +25,6 @@ Constraints:
 
 Follow up: Could you solve it without converting the integer to a string?
 '''
-
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
-        if x < 0:
-            return False
-        y = list(str(x))
-        y = y[::-1]
-        y = "".join(y)
-        if int(y) == int(x):
-            return True
-        else:
-            return False
 # uses less space but more computation time solution below
 class Solution(object):
     def isPalindrome(self, x):
